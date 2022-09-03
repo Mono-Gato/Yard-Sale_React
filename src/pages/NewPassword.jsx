@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/RecoveryPassword.scss'
+import '../styles/NewPassword.scss'
 import logo from '../assets/Logos/logo_yard_sale.svg';
 
-function RecoveryPassword () {
+function NewPassword () {
     return(
-        <div className="password">
+        <div className="newPassword">
             <div className="form-container">
                 <img className="logo" src={logo} alt="Logo Yard Sale" />
                 <h1 className="title">Create a new password</h1>
@@ -18,8 +18,7 @@ function RecoveryPassword () {
                 </form>
             </div>
         </div>
-
     )
 }
 
-export { RecoveryPassword }
+export { NewPassword }
