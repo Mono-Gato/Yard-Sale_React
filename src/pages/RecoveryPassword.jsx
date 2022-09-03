@@ -1,30 +1,22 @@
-import React from 'react'
-import '../styles/RecoveryPassword.scss'
+import React from 'react';
+import '../styles/RecoveryPassword.scss';
 import logo from '../assets/Logos/logo_yard_sale.svg';
-import iconEmail from '../assets/Icons/email.svg'
 
 function RecoveryPassword () {
-    return(
-        <div className="recoveryPassword">
-            <div className="form-container">
-                <img className="logo" src={logo} alt="Logo Yard Sale" />
-                <h1 className="title">Email has been sent!</h1>
-                <p className="subtitle">Please check your inbox for instructions on how to reset the password</p>
-                <div className="recoveryPassword__image">
-                    <img src={iconEmail} />
-                </div>
-                <button className="button login__button"> login</button>
-                <p className="resend">
-                    <span>
-                        Didn't receive the email?
-                    </span>
-                    <a href="/">
-                        Resend
-                    </a>
-                </p>
-            </div>
-        </div>
-    )
+	return (
+		<div className="recoveryPassword">
+			<div className="form-container">
+				<img className="logo" src={logo} alt="Logo Yard Sale" />
+				<h1 className="title">Password recovery</h1>
+				<p className="subtitle">Inform the email address used to create your account</p>
+				<form action className="form">
+					<label htmlFor="recoveryPassword__email" className="label label--email">Email address</label>
+                    <input type="email" className="input input--email" placeholder="youremail@gmail.com" id="recoveryPassword__email" />
+					<input type="submit" value="Confirm" className="button login__button" />
+				</form>
+			</div>
+		</div>
+	);
 }
 
 export { RecoveryPassword }
