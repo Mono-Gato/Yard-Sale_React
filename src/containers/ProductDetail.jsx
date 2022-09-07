@@ -1,7 +1,6 @@
 import React from 'react'
-import '../styles/ProductDetail.scss'
-import iconClose from '../assets/Icons/icon_close.png'
-import iconAddCart from '../assets/Icons/bt_add_to_cart.svg'
+import '@styles/ProductDetail.scss'
+import iconClose from '@icons/icon_close.png'
 
 function ProductDetail () {
 

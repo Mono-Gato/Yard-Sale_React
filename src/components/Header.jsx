@@ -1,9 +1,9 @@
 import React from 'react'
-import '../styles/Header.scss'
-import iconMenu from '../assets/Icons/icon_menu.svg'
-import logo from '../assets/Logos/logo_yard_sale.svg'
-import iconArrow from '../assets/Icons/flechita.svg'
-import iconShoppingCart from '../assets/Icons/icon_shopping_cart.svg'
+import '@styles/Header.scss'
+import iconMenu from '@icons/icon_menu.svg'
+import logo from '@logos/logo_yard_sale.svg'
+import iconArrow from '@icons/flechita.svg'
+import iconShoppingCart from '@icons/icon_shopping_cart.svg'
 
 function Header () {
     return(

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/CheckoutItem.scss'
+import '@styles/CheckoutItem.scss'
 
 function CheckoutItem() {
 

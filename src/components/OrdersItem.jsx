@@ -1,6 +1,6 @@
 import React from 'react'
-import '../styles/OrdersItem.scss'
-import iconArrow from '../assets/Icons/flechita.svg'
+import '@styles/OrdersItem.scss'
+import iconArrow from '@icons/flechita.svg'
 
 function OrdersItem(){
 
