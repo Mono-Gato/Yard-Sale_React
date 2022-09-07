@@ -8,9 +8,9 @@ import iconShoppingCart from '../assets/Icons/icon_shopping_cart.svg'
 function Header () {
     return(
         <nav className="navbar">
-            <img src={iconMenu} alt className="navbar__menu-icon" />
+            <img src={iconMenu}  className="navbar__menu-icon" />
             <div className="navbar-left">
-                <img className="navbar__logo" src={logo} alt />
+                <img className="navbar__logo" src={logo} />
                 <ul>
                     <li>
                         <a href="/">All</a>
@@ -36,10 +36,10 @@ function Header () {
                 <ul>
                     <li className="navbar__email">
                         camilayokoo@gmail.com
-                        <img src={iconArrow} alt />
+                        <img src={iconArrow}  />
                     </li>
                     <li className="navbar__cart">
-                        <img src={iconShoppingCart} alt />
+                        <img src={iconShoppingCart} />
                         <div>
                             2
                         </div>

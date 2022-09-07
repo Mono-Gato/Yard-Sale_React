@@ -12,7 +12,7 @@ function ProductItem(){
                     <p>Bmx</p>
                 </div>
                 <figure className="info__image">
-                    <img src={iconAddCart} alt />
+                    <img src={iconAddCart} />
                 </figure>
             </div>
         </div>

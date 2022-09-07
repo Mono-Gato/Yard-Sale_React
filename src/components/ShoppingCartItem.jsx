@@ -8,7 +8,7 @@ function ShoppingCartItem() {
         <div className="ShoppingCart__item">
             <div>
                 <figure>
-                    <img src="https://images.pexels.com/photos/5465162/pexels-photo-5465162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt />
+                    <img src="https://images.pexels.com/photos/5465162/pexels-photo-5465162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                 </figure>
                 <p>
                     Bmx
@@ -16,7 +16,7 @@ function ShoppingCartItem() {
             </div>
             <div>
                 <p>$ 120,00</p>
-                <img src={iconClose} alt />
+                <img src={iconClose} />
             </div>
         </div>
     );
