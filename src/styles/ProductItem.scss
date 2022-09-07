@@ -1,4 +1,4 @@
-@import url(./_vars.scss);
+@import './vars';
 .card{
     width: 140px;
     &__image{
@@ -12,29 +12,33 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 8px;
+        
     }
-    &__text {
-        p{
-            &:nth-child(1){
-                font-weight: 700;
-                font-size: $md;
-                color: $black;
+    .info{
+        &__text {
+            p{
+                &:nth-child(1){
+                    font-weight: 700;
+                    font-size: $md;
+                    color: $black;
+                }
+                &:nth-child(2){
+                    margin-top: 4px;
+                    color: $dark;
+                    font-size: $sm;
+                }
             }
-            &:nth-child(2){
-                margin-top: 4px;
-                color: $dark;
-                font-size: $sm;
+        }
+        &__image{
+            margin: 0;
+            cursor: pointer;
+            img{
+                width: 32px;
+                height: 32px;
             }
         }
     }
-    &__image{
-        margin: 0;
-        cursor: pointer;
-        img{
-            width: 32px;
-            height: 32px;
-        }
-    }
+   
 }
 
 

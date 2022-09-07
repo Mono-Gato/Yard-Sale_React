@@ -1,7 +1,7 @@
 
 import React from 'react';
 import '../styles/ShoppingCartItem.scss'
-import iconClose from '../assets/Icons/icon_close.svg'
+import iconClose from '../assets/Icons/icon_close.png'
 
 function ShoppingCartItem() {
     return (

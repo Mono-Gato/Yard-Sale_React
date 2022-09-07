@@ -1,5 +1,6 @@
 import React from 'react'
 import iconArrow from '../assets/Icons/flechita.svg'
+import '../styles/ShoppingCart.scss'
 import { ShoppingCartItem } from '../components/ShoppingCartItem'
 
 function ShoppingCart() {
