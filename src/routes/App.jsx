@@ -11,6 +11,8 @@ import { NewPassword } from '../pages/NewPassword';
 import { CreateAccount } from '../pages/CreateAccount';
 import { MyAccount } from '../pages/MyAccount';
 import { RecoveryPassword } from '../pages/RecoveryPassword';
+import { Checkout } from '../pages/Checkout';
+import { Orders } from '../pages/Orders';
 
 function App () {
     return(
@@ -24,6 +26,8 @@ function App () {
                     <Route exact path='/recovery-password' element={<RecoveryPassword />}/>
                     <Route exact path='/create-account' element={<CreateAccount />}/>
                     <Route exact path='/my-account' element={<MyAccount />}/>
+                    <Route exact path='/checkout' element={<Checkout />}/>
+                    <Route exact path='/orders' element={<Orders />}/>
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Layout>
