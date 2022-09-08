@@ -4,14 +4,14 @@ import '@styles/Menu.scss'
 function Menu () {
     return(
         <React.Fragment>
-            <div className="menu--desktop inactive">
+            <div className="menu--desktop ">
                 <ul>
                     <li><a href="/">My orders</a></li>
                     <li><a href="/">My account</a></li>
                     <li><a href="/">Sign out</a></li>
                 </ul>
             </div>
-            <div className="menu--mobile inactive">
+            <div className="menu--mobile">
                 {/*
                     <a class="close">
                         <img src="./src/static/Icons/icon_close.png" alt="">
