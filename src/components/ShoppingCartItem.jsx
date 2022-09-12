@@ -3,19 +3,19 @@ import React from 'react';
 import '@styles/ShoppingCartItem.scss'
 import iconClose from '@icons/icon_close.png'
 
-function ShoppingCartItem() {
+function ShoppingCartItem({product}) {
     return (
         <div className="ShoppingCart__item">
             <div>
                 <figure>
-                    <img src="https://images.pexels.com/photos/5465162/pexels-photo-5465162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    <img src={product.images[1]} />
                 </figure>
                 <p>
-                    Bmx
+                    {product.title}
                 </p>
             </div>
             <div>
-                <p>$ 120,00</p>
+                <p>$ {product.price}</p>
                 <img src={iconClose} />
             </div>
         </div>

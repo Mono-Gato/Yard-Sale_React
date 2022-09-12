@@ -6,14 +6,20 @@ import logo from '@logos/logo_yard_sale.svg'
 import iconArrow from '@icons/flechita.svg'
 import iconShoppingCart from '@icons/icon_shopping_cart.svg'
 import { AppContext } from '@context/AppContext'
+import { ShoppingCart } from '@containers/ShoppingCart'
 
 function Header () {
     const { state } = useContext(AppContext)
     const [ toggleMenu, setToggleMenu] = useState(false)
+    const [ toggleCart, setToggleCart] = useState(false)
     const handleToggleMenu = () =>{
         setToggleMenu(!toggleMenu)
     }
+    const handleToggleCart = () =>{
+        setToggleCart(!toggleCart)
+    }
     return(
+        <React.Fragment>
         <nav className="navbar">
             <img  onClick={handleToggleMenu} src={iconMenu}  className="navbar__menu-icon" />
             <div className="navbar-left">
@@ -41,11 +47,15 @@ function Header () {
             </div>
             <div className="navbar-right">
                 <ul>
-                    <li onClick={handleToggleMenu} className="navbar__email">
+                    <li 
+                        onClick={handleToggleMenu} 
+                        className="navbar__email">
                         camilayokoo@gmail.com
                         <img src={iconArrow}  />
                     </li>
-                    <li className="navbar__cart">
+                    <li 
+                        className="navbar__cart" 
+                        onClick={handleToggleCart}>
                         <img src={iconShoppingCart} />
                             {
                                 state.cart.length > 0 ? <div>{state.cart.length}</div> : null
@@ -57,6 +67,10 @@ function Header () {
                 toggleMenu && <Menu />
             }
         </nav>
+        {
+            toggleCart && <ShoppingCart />
+        }
+        </React.Fragment>
     )
 }
 
