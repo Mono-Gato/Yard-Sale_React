@@ -7,6 +7,11 @@ import { ShoppingCartItem } from '@components/ShoppingCartItem'
 
 function ShoppingCart() {
     const { state } = useContext(AppContext)
+    const sumTotal = () => {
+		const reducer = (accumulator, currentValue) => accumulator + currentValue.price;
+		const sum = state.cart.reduce(reducer, 0);
+		return sum;
+	}
     return(
         <aside className="shoppingCart">
             <div>
@@ -32,7 +37,7 @@ function ShoppingCart() {
                         Total
                     </p>
                     <p>
-                        $ 560,00
+                        ${sumTotal()}
                     </p>
                 </div>
                 <button className="button shoppingCart__button">

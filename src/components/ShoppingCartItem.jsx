@@ -8,7 +8,7 @@ function ShoppingCartItem({product}) {
         <div className="ShoppingCart__item">
             <div>
                 <figure>
-                    <img src={product.images[1]} />
+                    <img src={product.images[1]} alt={product.title}/>
                 </figure>
                 <p>
                     {product.title}
@@ -16,7 +16,7 @@ function ShoppingCartItem({product}) {
             </div>
             <div>
                 <p>$ {product.price}</p>
-                <img src={iconClose} />
+                <img src={iconClose} alt="close" />
             </div>
         </div>
     );
